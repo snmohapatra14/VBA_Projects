@@ -1,4 +1,4 @@
-# VBA_Projects
+# VBA_Data Merge of all sheets in a workbook
 # VBA code to merge data of all sheets in an excel file under a common header
 #3 parameters for input-As per input message 1) Common Header needs to be selected, 2) A cell name needs to be given that needs to be the first cell from where merging will start 3) A cell name needs to be given whose column will act as a parent key column which means no cell is blank in that column and that cell should be the starting cell in that column exclucing the header cells
 
