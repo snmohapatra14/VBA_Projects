@@ -7,15 +7,15 @@ Sub MERGEDATAEXP_SN()
 Dim myheaders As Range
 'myheadrs is the header that needs to be selected by the user after the msgbox pops up
 
-Set myheaders = Application.InputBox(prompt:="Please provide the header that is common to each sheet", Type:=8)
+Set myheaders = Application.InputBox(prompt:="Please select the header that is common to each sheet", Type:=8)
 'The input for the inputbox should be the header range selected by the user when the message pops up
 
 Dim strowcell As Variant
-strowcell = InputBox("Provide the starting cell name from where the data will be extracted for merging" & vbNewLine & "for ex: B3", vbInformation)
+strowcell = InputBox("Please provide the starting cell name from where the data will be extracted for merging" & vbNewLine & "for ex: B3", vbInformation)
 'The strowcell means starting row cell i.e., the cell name needs to be defined, starting from which data will be extracted, cell name needs to be defined in R1C1 style
 
 Dim stcontcell As String
-stcontcell = InputBox("Provide the starting cell name of any input column that doesn't have any blank cell" & vbNewLine & "for ex: C3")
+stcontcell = InputBox("Please provide the starting cell name of any input column that doesn't have any blank cell" & vbNewLine & "for ex: C3")
 'The stcontcell means starting continuous cell i.e., the cell name in any column which can act as aprent column or any column which has no blank cell in the data, cell name needs to be defined in R1C1 style
 
 Worksheets.Add after:=Worksheets(Worksheets.Count)
